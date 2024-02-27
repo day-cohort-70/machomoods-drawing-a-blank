@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    height: 200px;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+
+.tile {
+    flex-basis: 30%;
+    border: 2px solid white;
+}

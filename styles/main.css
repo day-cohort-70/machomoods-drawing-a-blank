@@ -5,17 +5,22 @@
 
 .tile-container {
     display: flex;
+    flex: 1 1 calc(33.30% - 20px);
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: center;
-    /*align-content: space-around;
-    justify-content: space-between;
-    flex-basis: calc(33.30% - 20px); 
-    when we need it^*/
-    
-}
+    justify-content: space-between; 
+  }
 
 .tile {
-    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
     border: 2px solid white;
+    min-width: 10%;
+    max-width: 30%;
+    margin: 10px; 
+    flex-shrink: 0;
+}
+
+.tile > div > * {
+    max-width: 100%;
 }
